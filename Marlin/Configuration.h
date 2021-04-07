@@ -876,7 +876,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -1157,9 +1157,9 @@
 // @section machine
 
 #if defined(U30) || defined(LK2) || defined(LK4)
-#define X_BED_SIZE 220
-#define Y_BED_SIZE 220
-#define Z_MACHINE_MAX 250
+#define X_BED_SIZE 300
+#define Y_BED_SIZE 300
+#define Z_MACHINE_MAX 400
 #endif
 
 #if defined(U20) || defined(LK1)
@@ -1390,7 +1390,7 @@
  * Add a bed leveling sub-menu for ABL or MBL.
  * Include a guided procedure if manual probing is enabled.
  */
-//#define LCD_BED_LEVELING
+#define LCD_BED_LEVELING
 
 #if ENABLED(LCD_BED_LEVELING)
   #define MESH_EDIT_Z_STEP  0.025 // (mm) Step size while manually probing Z axis.
